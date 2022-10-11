@@ -9,13 +9,15 @@
 </head>
 
 <body>
-  <p id="disp">ここに表示します</p>
+  <p id="disp1">ここに表示します1</p>
+  <p id="disp2">ここに表示します2</p>
   <script>
-    a = 100;
-    var b = 200;
-    const c = 300;
+    let a = 100;
+    const b = 200;
+    document.getElementById('disp1').innerHTML = a;
 
-    document.getElementById('disp').innerHTML = "OK";
+    a = 500;
+    document.getElementById('disp2').innerHTML = a;
   </script>
 </body>
 
